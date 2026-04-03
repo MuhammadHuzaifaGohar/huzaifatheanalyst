@@ -203,18 +203,3 @@ body.is-preload * {
     transition: none !important;
     animation: none !important;
 }
-
-/* Restore Original Image Proportions */
-.spotlight .image img {
-    height: 400px !important; /* Adjust this value to your preferred original height */
-    width: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-}
-
-/* Mobile Fix: Ensure images don't look squashed on small screens */
-@media screen and (max-width: 980px) {
-    .spotlight .image img {
-        height: 300px !important;
-    }
-}
