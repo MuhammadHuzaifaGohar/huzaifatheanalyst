@@ -2680,11 +2680,12 @@ input, select, textarea {
 			width: 40%;
 		}
 
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
-
+.spotlight .image img {
+    border-radius: 0;
+    width: 100%;
+    max-height: 400px; /* Decrease this value further to make images shorter */
+    object-fit: cover;
+}
 		.spotlight .content {
 			padding: 2em 4em 0.1em 4em ;
 			-moz-order: 2;
