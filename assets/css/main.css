@@ -485,6 +485,21 @@ ul.icons li{display:inline-block;padding:0 1em 0 0;}
 ul.icons li:last-child{padding-right:0!important;}
 ul.icons.major{padding:1em 0;}
 ul.icons.major li{padding-right:3.5em;}
+
+/* Restore Original Image Proportions */
+.spotlight .image img {
+    height: 400px !important; /* Adjust this value to your preferred original height */
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* Mobile Fix: Ensure images don't look squashed on small screens */
+@media screen and (max-width: 980px) {
+    .spotlight .image img {
+        height: 300px !important;
+    }
+}
 @media screen and (max-width:736px){ul.icons.major li{padding:0 1em!important;}}
 .table-wrapper{-webkit-overflow-scrolling:touch;overflow-x:auto;}
 table{margin:0 0 2em 0;width:100%;}
